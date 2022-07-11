@@ -3,7 +3,7 @@ from flask import flash
 from flask_app.models import user
 
 class Show:
-    db = "TV_DB"
+    db = "tv_db"
     def __init__(self, data):
         self.id = data['id']
         self.added_by_id = data['added_by_id']
