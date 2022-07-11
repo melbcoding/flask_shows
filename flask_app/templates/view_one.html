@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Show Page</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <h1>Add a New Show!</h1>
+            <a class="nav-link" href="/shows">TV Shows</a>
+            <a class="nav-link" href="/logout">logout</a>
+        </div>
+    </nav>
+    <div class="container-sm card">
+        <div class="card-body">
+        <div class="d-flex justify-content-between">
+            <h1 class="card-title">{{one_show.title}}</h1>
+            <h4 class="card-subtitle mb-2 text-muted ">Liked by: {{one_show.like_count}}</h4>
+        </div>
+        <p class="card-text">Network {{one_show.network}}</p>
+        <p class="card-text">Release Date {{one_show.release_date}}</p>
+        <p class="card-text">Description: {{one_show.description}}</p>
+        <p class="card-text">Posted By: {{one_show.added_by.first_name}} {{one_show.added_by.last_name}}</p>
+    </div>
+
+</body>
+</html>
